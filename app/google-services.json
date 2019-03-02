@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "945966115303",
+    "firebase_url": "https://twilightzone-app.firebaseio.com",
+    "project_id": "twilightzone-app",
+    "storage_bucket": "twilightzone-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945966115303:android:1933712c67047d86",
+        "android_client_info": {
+          "package_name": "com.example.twilightzone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945966115303-brkasjo8f4u17r3v1r99oa8m3o525s3a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.twilightzone",
+            "certificate_hash": "c41a44403edcb5f8679c08aafd3e4f5d969ab96b"
+          }
+        },
+        {
+          "client_id": "945966115303-1kfm9i512jkt88k20a7gmrpqk1rr33g0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI4jCmSeYTQx2Z6v4OcND9dnyB-82YyIU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945966115303-1kfm9i512jkt88k20a7gmrpqk1rr33g0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
