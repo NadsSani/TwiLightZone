@@ -25,5 +25,6 @@ public class OldageHome extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_oldage_home);
+
     }
 }
