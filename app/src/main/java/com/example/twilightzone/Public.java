@@ -69,8 +69,8 @@ DatabaseReference myRef = database.getReference("users/oldagehomes");
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
 
         oldagehomerecycle.setLayoutManager(layoutManager);
-
         menubutton = (ImageButton)findViewById(R.id.menubutton);
+
 
 myRef.addListenerForSingleValueEvent(new ValueEventListener() {
     @Override
