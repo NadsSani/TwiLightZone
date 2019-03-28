@@ -9,17 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
-        <activity android:name=".OldageHomeDetails"></activity>
-        <activity android:name=".RegisterForPublic" />
-        <activity android:name=".RegisterForSocialGroup" />
-        <activity android:name=".RegisterForOldageHome" />
-        <activity android:name=".Public" />
-        <activity android:name=".Admin" />
-        <activity android:name=".Government" />
-        <activity android:name=".SocialGroups" />
-        <activity android:name=".OldageHome" />
+        <activity android:name=".Admin"></activity>
+        <activity
+            android:name=".OldageHomeDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterForPublic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterForSocialGroup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterForOldageHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Public"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Government"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SocialGroups"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OldageHome"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

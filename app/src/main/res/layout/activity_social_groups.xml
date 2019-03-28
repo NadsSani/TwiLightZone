@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".SocialGroups">
 
+    <ImageButton
+        android:id="@+id/menubutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelinesocialgroup"
+        app:layout_constraintEnd_toStartOf="@+id/guideline72"
+        app:layout_constraintStart_toStartOf="@+id/guideline70"
+        app:layout_constraintTop_toTopOf="@+id/guideline71"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/menuiconbar" />
+
     <TextView
         android:id="@+id/socialgroutitle"
         android:layout_width="wrap_content"
@@ -15,17 +30,19 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintBottom_toTopOf="@+id/guidelinesocialgroup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="@+id/guideline72"
+        app:layout_constraintTop_toTopOf="@+id/guideline71"
+        app:layout_constraintVertical_bias="0.517" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelinesocialgroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="111dp" />
+        app:layout_constraintGuide_percent="0.15321477" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerforsocial"
@@ -46,4 +63,25 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.96" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05109489" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02872777" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.24" />
 </android.support.constraint.ConstraintLayout>

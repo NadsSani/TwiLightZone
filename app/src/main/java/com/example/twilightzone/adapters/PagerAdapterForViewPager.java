@@ -9,20 +9,28 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.example.twilightzone.R;
+import com.example.twilightzone.buissinessentities.OldageImage;
+
+import java.util.ArrayList;
 
 public class PagerAdapterForViewPager extends PagerAdapter {
     private Context context;
+    ArrayList<String> list;
+
     private LayoutInflater layoutInflater;
     private Integer[] image = {R.drawable.trtg,R.mipmap.oldagehomelogocopy,R.drawable.oldagehomewall,R.mipmap.oldagehomelogocopy};
 
-    public PagerAdapterForViewPager(Context context) {
+    public PagerAdapterForViewPager(Context context , ArrayList<String> arrayList) {
         this.context = context;
+        this.list = arrayList;
+
     }
 
     @Override
     public int getCount() {
-        return image.length;
+        return list.size();
     }
 
 
@@ -30,7 +38,8 @@ public class PagerAdapterForViewPager extends PagerAdapter {
         layoutInflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(R.layout.image_for_slliding,null);
         ImageView imageView = (ImageView)view.findViewById(R.id.imageView);
-        imageView.setImageResource(image[position]);
+        Glide.with(context).load(list.get(position)).into(imageView);
+        //imageView.setImageResource(image[position]);
         ViewPager vp = (ViewPager)container;
         vp.addView(view,0);
         return view;

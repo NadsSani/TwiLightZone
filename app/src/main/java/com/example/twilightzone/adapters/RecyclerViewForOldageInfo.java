@@ -47,7 +47,7 @@ Context context;
         requests = (TextView)cardView.findViewById(R.id.request);
         titles.setText(list.get(i).getTitle().toString());
         detail.setText(list.get(i).getDetails().toString());
-        requests.setText(list.get(i).getRequest().toString());
+        requests.setText("requests: " + list.get(i).getRequest().toString());
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

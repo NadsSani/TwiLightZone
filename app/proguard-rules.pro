@@ -11,7 +11,13 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+#-keep class com.wonderkiln.blurkit.** { *; }
 
+#-dontwarn android.support.v8.renderscript.*
+#-keepclassmembers class android.support.v8.renderscript.RenderScript {
+# native *** rsn*(...);
+#  native *** n*(...);
+#}
 # Uncomment this to preserve the line number information for
 # debugging stack traces.
 #-keepattributes SourceFile,LineNumberTable
