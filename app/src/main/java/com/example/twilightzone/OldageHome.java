@@ -78,7 +78,7 @@ Button accepted,acceptbutforgov;
         menubutton = (ImageButton)findViewById(R.id.menubutton);
 
         DatabaseReference myRef = database.getReference("users/oldagehomeimage/"+userid);
-        DatabaseReference myRef2 = database.getReference("users/oldagehomes/"+userid);
+        final DatabaseReference myRef2 = database.getReference("users/oldagehomes/"+userid);
         myRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -130,6 +130,24 @@ Button accepted,acceptbutforgov;
 
             }
         });
+        accepted.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myRef2.child("request").setValue(requestforpublic.getText().toString());
+
+            }
+        });
+
+        acceptbutforgov.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myRef2.child("govtrequest").setValue(govrequest.getText().toString());
+            }
+        });
+
+
+
+
     }
 
     @Override

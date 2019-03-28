@@ -6,9 +6,9 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="tab_text_3">Tab 3</string>
     <string name="action_settings">Settings</string>
-    <string name="name1">Social Groups</string>
-    <string name="name2">Public </string>
-    <string name="name3">Oldage Homes</string>
+    <string name="name1" >Social Groups</string>
+    <string name="name2">OLdage Homes </string>
+    <string name="name3">Public</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
     <!-- TODO: Remove or change this placeholder text -->
