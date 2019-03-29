@@ -32,7 +32,7 @@ public class PublicRegEntity {
         return contact;
     }
 
-    public String getEmailid() {
+    public String getEmail() {
         return email;
     }
 }

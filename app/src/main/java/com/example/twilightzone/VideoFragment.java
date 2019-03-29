@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.twilightzone.adapters.RecycleForPublic;
+import com.example.twilightzone.adapters.RecycleForSoc;
 import com.example.twilightzone.buissinessentities.PubAndSocia;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -38,7 +39,7 @@ public class VideoFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_video, container, false);
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("users/public");
+        DatabaseReference myRef = database.getReference("users/socialgroups");
         final RecyclerView oldagehomerecycle = (RecyclerView)view.findViewById(R.id.recyclerforsoc);
         oldagehomerecycle.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
@@ -53,7 +54,7 @@ public class VideoFragment extends Fragment {
                     arrayList.add(oldageCardDetails);
 
                 }
-                RecycleForPublic playAdapter = new RecycleForPublic(arrayList,getActivity());
+                RecycleForSoc playAdapter = new RecycleForSoc(arrayList,getActivity());
                 oldagehomerecycle.setAdapter(playAdapter);
             }
 
