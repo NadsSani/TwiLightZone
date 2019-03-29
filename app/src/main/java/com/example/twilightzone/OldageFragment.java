@@ -29,7 +29,7 @@ import java.util.ArrayList;
 public class OldageFragment extends Fragment {
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference("users/oldagehomes");
-    ArrayList<OldageCardDetails> arrayList;
+    ArrayList<OldageCardDetails> arrayList = new ArrayList<>();
     Context context;
     public OldageFragment() {
         // Required empty public constructor
@@ -40,7 +40,10 @@ public class OldageFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        arrayList = new ArrayList<>();
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("users/oldagehomes");
+
         View view = inflater.inflate(R.layout.fragment_oldage, container, false);
         final RecyclerView oldagehomerecycle = (RecyclerView)view.findViewById(R.id.recyclerforoldage);
 

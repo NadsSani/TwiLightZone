@@ -1,19 +1,25 @@
 package com.example.twilightzone.buissinessentities;
 
-public class PublicRegEntity {
-
+public class PubAndSocia {
+    private String userid;
     private String password;
-    private String name ;
+    private String name;
     private String address;
-    private String contact ;
     private String email;
+    private String contact;
 
-    public PublicRegEntity(String password, String name, String address, String contact, String email) {
+
+    public PubAndSocia(String userid, String password, String name, String address, String email, String contact) {
+        this.userid = userid;
         this.password = password;
         this.name = name;
         this.address = address;
-        this.contact = contact;
         this.email = email;
+        this.contact = contact;
+    }
+
+    public String getUserid() {
+        return userid;
     }
 
     public String getPassword() {
@@ -28,11 +34,11 @@ public class PublicRegEntity {
         return address;
     }
 
-    public String getContact() {
-        return contact;
+    public String getEmail() {
+        return email;
     }
 
-    public String getEmailid() {
-        return email;
+    public String getContact() {
+        return contact;
     }
 }

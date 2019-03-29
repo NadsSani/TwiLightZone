@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView
-    android:id="@+id/cardview_foroldage"
+    android:id="@+id/cardview_forpub"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
@@ -14,7 +14,7 @@
         android:background="@drawable/designedittext">
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/titlepub"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -46,7 +46,7 @@
             app:layout_constraintTop_toTopOf="@+id/guideline48" />
 
         <TextView
-            android:id="@+id/conatact"
+            android:id="@+id/contact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -89,10 +89,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.510989" />
+            app:layout_constraintGuide_percent="0.42" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/rejectpub"
             android:layout_width="wrap_content"
             android:layout_height="43dp"
             android:layout_marginTop="8dp"

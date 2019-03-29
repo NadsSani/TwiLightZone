@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-
+import com.example.twilightzone.R;
 import com.example.twilightzone.OldageHomeDetails;
 import com.example.twilightzone.buissinessentities.OldageCardDetails;
 import com.google.firebase.database.DatabaseReference;
@@ -77,7 +77,8 @@ public class RecyclerForAdminOldage extends  RecyclerView.Adapter<RecyclerForAdm
 
     @Override
     public int getItemCount() {
-        return 0;
+        int len = list.size();
+        return len ;
     }
 
 
