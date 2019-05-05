@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/designedittext">
+
+    <Button
+        android:id="@+id/closenotice"
+        android:layout_width="57dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/notice"
+        app:layout_constraintBottom_toTopOf="@+id/guideline80"
+        app:layout_constraintEnd_toStartOf="@+id/guideline83"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="@+id/guideline82"
+        app:layout_constraintTop_toTopOf="@+id/guideline81"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15321477" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.57177615" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8832117" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="293dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="36dp"
+        android:padding="10dp"
+        android:text="This application does not support abondoning of old peoples"
+        android:textSize="30sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline84"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline80"
+        app:layout_constraintVertical_bias="0.831" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.69" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+</android.support.constraint.ConstraintLayout>

@@ -11,7 +11,9 @@
     <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
 
     </style>
+<style name="MyTheme" parent="AppTheme.AppBarOverlay">
 
+</style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

@@ -10,5 +10,6 @@
     <color name="colorbottom">#FFFFFF</color>
     <color name="colortop2">#3399ff</color>
     <color name="colorbottom2">#66ffcc</color>
-
+    <color name="colorforacrionba">#404040</color>
+    <color name="colorforbg">#e6e6e6</color>
 </resources>

@@ -192,6 +192,20 @@ alertDialog.cancel();
     @Override
     protected void onStart() {
         super.onStart();
+Button closenotice;
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        View mView = View.inflate(MainActivity.this,R.layout.notice,null);
+        /*editText = (EditText)mView.findViewById(R.id.editText36);*/
+        builder.setView(mView);
+        final AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+        closenotice = (Button)mView.findViewById(R.id.closenotice);
+        closenotice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alertDialog.cancel();
+            }
+        });
         sharedPreferences = sharedPreferences = getApplicationContext().getSharedPreferences("MyShared", Context.MODE_PRIVATE);
         String userids = sharedPreferences.getString("userid","");
         String pasws =  sharedPreferences.getString("password","");

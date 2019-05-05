@@ -9,8 +9,8 @@
 
     <EditText
         android:id="@+id/userid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="169dp"
+        android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -26,8 +26,8 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="158dp"
+        android:layout_height="35dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -43,8 +43,8 @@
 
     <Button
         android:id="@+id/loginbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="135dp"
+        android:layout_height="31dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -58,8 +58,8 @@
 
     <TextView
         android:id="@+id/twilighttitle"
-        android:layout_width="190dp"
-        android:layout_height="52dp"
+        android:layout_width="189dp"
+        android:layout_height="38dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
@@ -77,8 +77,8 @@
 
     <Button
         android:id="@+id/signupbutton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="129dp"
+        android:layout_height="33dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -95,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.373461" />
+        app:layout_constraintGuide_percent="0.38" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline2"
