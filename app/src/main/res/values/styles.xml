@@ -11,8 +11,10 @@
     <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
 
     </style>
-<style name="MyTheme" parent="AppTheme.AppBarOverlay">
-
+<style name="MyTheme" parent="Theme.AppCompat">
+    <item name="colorPrimary">@color/colortop</item>
+    <item name="colorPrimaryDark">@color/colortop</item>
+    <item name="colorAccent">@color/colortop</item>
 </style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
