@@ -24,7 +24,7 @@
             app:layout_constraintEnd_toStartOf="@+id/guideline73"
             app:layout_constraintStart_toStartOf="@+id/guideline9"
             app:layout_constraintTop_toTopOf="@+id/guideline74"
-            android:src="@mipmap/menuiconbar" />
+            app:srcCompat="@mipmap/menuiconbar" />
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
